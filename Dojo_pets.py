@@ -73,7 +73,5 @@ everett = Ninja("Everett", "Martinez", my_treats, my_pet_food, logan)
 
 
 everett.bathe()
-# everett.walk()
-# logan.sleep()
-
-logan
+everett.walk()
+logan.sleep()
