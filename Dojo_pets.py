@@ -34,6 +34,10 @@ class Pet:
 
     def sleep(self):
         self.energy += 25
+        self.health += 5
+        print(f"Sleep always helps with health and energy")
+        print(self.energy)
+        print(self.health)
         return self
         
 
@@ -48,6 +52,11 @@ class Pet:
 
     def play (self):
         self.health += 5
+        print(f"Logan feels happier")
+        self.energy -= 3
+        print(f"Logan now needs more energy")
+        print(self.health)
+        print(self.energy)
         return self
         
 
@@ -62,4 +71,9 @@ logan = Pet("Logan", "Dog", ["Sit", "Shake", "Roll over"], "Woof Woof!")
 
 everett = Ninja("Everett", "Martinez", my_treats, my_pet_food, logan)
 
-logan.eat()
+
+everett.bathe()
+# everett.walk()
+# logan.sleep()
+
+logan
